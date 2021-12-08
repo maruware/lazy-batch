@@ -1,6 +1,6 @@
 {
   "name": "lazy-batch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Run tasks lazily in batches ",
   "main": "dist/lazy-batch.cjs.js",
   "module": "dist/lazy-batch.esm.js",
