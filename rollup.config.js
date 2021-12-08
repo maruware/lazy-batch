@@ -4,7 +4,7 @@ import pkg from "./package.json";
 
 export default [
   {
-    input: "dist-tsc/index.js",
+    input: "dist-tsc/lazy_batch.js",
     output: {
       name: "lazyBatch",
       file: pkg.browser,
@@ -13,7 +13,8 @@ export default [
     plugins: [resolve(), commonjs()],
   },
   {
-    input: "dist-tsc/index.js",
+    input: "dist-tsc/lazy_batch.js",
+    external: ["just-debounce-it"],
     output: [
       { file: pkg.main, format: "cjs" },
       { file: pkg.module, format: "es" },

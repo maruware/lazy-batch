@@ -6,9 +6,10 @@
     "noEmitOnError": true,
     "lib": ["es2017"],
     "strict": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "outDir": "dist-tsc",
     "rootDir": "./src"
   },
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./src/**/*.test.ts"]
 }
