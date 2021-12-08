@@ -16,12 +16,14 @@ $ yarn add lazy-batch
 ## Usage
 
 ```ts
-const cb = (inputs: number[]) => {
+import { LazyBatch } from "lazy-batch";
+
+const batchProcess = (inputs: number[]) => {
   console.log(inputs);
 }
-const lb = new LazyBatch<number>(cb, { maxLength: 2, maxDelay: 3000 });
-lb.add(123);
-lb.add(456);
+const lazyBatch = new LazyBatch<number>(batchProcess, { maxLength: 2, maxDelay: 3000 });
+lazyBatch.add(123);
+lazyBatch.add(456);
 
-// See [123, 456]
+// See [ 123, 456 ]
 ```
