@@ -6,6 +6,7 @@
   "module": "dist/lazy_batch.esm.js",
   "browser": "dist/lazy_batch.umd.js",
   "types": "dist/lazy_batch.d.ts",
+  "files": ["dist"],
   "repository": "ssh://git@github.com/maruware/lazy-batch.git",
   "author": "maruware <me@maruware.com>",
   "license": "MIT",
